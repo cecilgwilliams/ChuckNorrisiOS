@@ -22,6 +22,10 @@ namespace ChuckNorrisiPhone
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextView QuoteBox { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView Quotes { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (NextQuote != null) {
@@ -31,6 +35,10 @@ namespace ChuckNorrisiPhone
 			if (QuoteBox != null) {
 				QuoteBox.Dispose ();
 				QuoteBox = null;
+			}
+			if (Quotes != null) {
+				Quotes.Dispose ();
+				Quotes = null;
 			}
 		}
 	}

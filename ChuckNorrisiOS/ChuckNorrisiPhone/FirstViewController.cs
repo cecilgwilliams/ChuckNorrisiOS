@@ -14,7 +14,7 @@ namespace ChuckNorrisiPhone
         public FirstViewController(IntPtr handle)
             : base(handle)
         {
-            Title = NSBundle.MainBundle.LocalizedString("First", "First");
+            Title = NSBundle.MainBundle.LocalizedString("Quotes", "Quotes");
             TabBarItem.Image = UIImage.FromBundle("Images/first");
         }
 

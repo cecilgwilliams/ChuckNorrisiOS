@@ -14,8 +14,16 @@ namespace ChuckNorrisiPhone
 	[Register ("SecondViewController")]
 	partial class SecondViewController
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView Graph { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (Graph != null) {
+				Graph.Dispose ();
+				Graph = null;
+			}
 		}
 	}
 }

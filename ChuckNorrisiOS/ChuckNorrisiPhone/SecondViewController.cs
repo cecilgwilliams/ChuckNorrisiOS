@@ -17,7 +17,7 @@ namespace ChuckNorrisiPhone
         public SecondViewController(IntPtr handle)
             : base(handle)
         {
-            Title = NSBundle.MainBundle.LocalizedString("Second", "Second");
+            Title = NSBundle.MainBundle.LocalizedString("Graph", "Graphs");
             TabBarItem.Image = UIImage.FromBundle("Images/second");
         }
 

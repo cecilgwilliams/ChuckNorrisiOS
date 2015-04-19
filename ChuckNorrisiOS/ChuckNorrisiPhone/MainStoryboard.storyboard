@@ -7,7 +7,7 @@
         <!--class Prefix:identifier First View Controller - First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController title="Quotes" id="CZ4-MO-1fc" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5"/>
                         <viewControllerLayoutGuide type="bottom" id="6"/>
@@ -42,6 +42,7 @@
                     <connections>
                         <outlet property="QuoteBox" destination="27" id="name-outlet-27"/>
                         <outlet property="NextQuote" destination="18" id="name-outlet-18"/>
+                        <outlet property="Quotes" destination="2VE-Yg-loa" id="name-outlet-2VE-Yg-loa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
@@ -51,7 +52,7 @@
         <!--class Prefix:identifier Second View Controller - Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
-                <viewController title="Second" id="QUy-BD-bpt" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController title="Graph" id="QUy-BD-bpt" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7"/>
                         <viewControllerLayoutGuide type="bottom" id="8"/>
@@ -63,7 +64,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graph" image="second" id="Z7h-1E-pvt"/>
-                    <connections/>
+                    <connections>
+                        <outlet property="Graph" destination="gMD-aP-Fq6" id="name-outlet-gMD-aP-Fq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
