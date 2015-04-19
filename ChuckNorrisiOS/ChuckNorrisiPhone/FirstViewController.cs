@@ -35,6 +35,11 @@ namespace ChuckNorrisiPhone
             // Perform any additional setup after loading the view, typically from a nib.
 
             QuoteBox.Text = _chuckNorrisQuotes.GetNextQuote();
+
+            NextQuote.TouchUpInside += (object sender, EventArgs e) =>
+            {
+                QuoteBox.Text = _chuckNorrisQuotes.GetNextQuote();
+            };
         }
 
         public override void ViewWillAppear(bool animated)
