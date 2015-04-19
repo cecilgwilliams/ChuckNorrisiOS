@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Drawing;
 using System.Collections.Generic;
-
 using Foundation;
 using UIKit;
+using ChuckNorris;
 
 namespace ChuckNorrisiPhone
 {
     public partial class FirstViewController : UIViewController
     {
+        ChuckNorrisQuotes _chuckNorrisQuotes = new ChuckNorrisQuotes();
+
         public FirstViewController(IntPtr handle)
             : base(handle)
         {
@@ -31,6 +33,8 @@ namespace ChuckNorrisiPhone
             base.ViewDidLoad();
 
             // Perform any additional setup after loading the view, typically from a nib.
+
+            QuoteBox.Text = _chuckNorrisQuotes.GetNextQuote();
         }
 
         public override void ViewWillAppear(bool animated)
