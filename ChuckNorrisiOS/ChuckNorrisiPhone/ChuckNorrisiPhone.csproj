@@ -121,5 +121,11 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ChuckNorrisQuotes\ChuckNorris\ChuckNorris.csproj">
+      <Project>{297f0d24-b0a1-4090-b80c-c5659a21a6da}</Project>
+      <Name>ChuckNorris</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
